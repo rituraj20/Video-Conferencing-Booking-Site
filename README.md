@@ -102,7 +102,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-repo/video-conferencing-booking-portal.git
+git clone (https://github.com/rituraj20/Video-Conferencing-Booking-Site.git)
 cd Video-Conferencing-Booking-Portal
 
 Setup the Database:
@@ -126,7 +126,7 @@ Build the project using Maven.
 Deploy the WAR file to Apache Tomcat.
 Run the Application:
 
-Access the application at http://localhost:8080/video-conferencing-booking-portal.
+
 
 **API Endpoints**
 
