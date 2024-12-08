@@ -1,0 +1,314 @@
+@charset "ISO-8859-1";
+/* General Styles */
+
+  body {
+            background-size: cover; /* Cover the entire viewport */
+
+  background-position: center; /* Center the image */
+
+  background-repeat: no-repeat; /* Do not repeat the image */
+
+  background-attachment: fixed; /* Keep the image fixed when scrolling (optional) */
+
+  color: #333; /* Default text color */
+
+  margin: 0; /* Remove default body margin */
+
+  padding: 0;
+  
+  background-color: azure;
+
+        }
+
+      header {
+    display: flex;
+    justify-content: center; /* This will center the h1 */
+    align-items: center;
+    padding: 5px;
+    background-color: #00796b;
+    color: white;
+    position: relative; /* To allow positioning of .welcome-info */
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome-info {
+    position: absolute; /* Position it on the left side */
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center it */
+}
+
+.welcome-info h3, .welcome-info p {
+    margin: 0;
+    text-align: left;
+}
+      
+  .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #003f5c;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff7043;
+            color: white;
+            transform: scale(1.05);
+        }
+
+
+  h2 {
+
+   font-size: 28px;
+
+   color: #0d47a1;
+
+   margin: 20px 0;
+
+   text-align: center;
+
+   font-weight: bold;
+
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+  }
+
+
+
+  /* Container for Bookings */
+
+  .container {
+
+   max-width: 90%;
+
+   margin: 20px auto;
+
+   display: flex;
+
+   flex-wrap: wrap;
+
+   gap: 20px;
+
+   justify-content: center;
+
+   flex-grow: 1; /* Allows container to grow and fill available space */
+
+  }
+
+
+
+  /* Booking Card Styles */
+
+  .booking-info {
+
+   flex: 1 1 calc(33.33% - 20px);
+
+   max-width: 300px;
+
+   background: #ffffff;
+
+   padding: 20px;
+
+   border-radius: 12px;
+
+   border: 1px solid #ddd;
+
+   text-align: left;
+
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+   transition: transform 0.4s, box-shadow 0.4s ease;
+
+   animation: fadeIn 0.8s ease;
+
+  }
+
+
+
+  .booking-info:hover {
+
+   transform: translateY(-10px);
+
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  }
+
+
+
+  .booking-info p {
+
+   margin: 10px 0;
+
+   line-height: 1.6;
+
+  }
+
+
+
+  .booking-info span {
+
+   font-weight: bold;
+
+   color: #333;
+
+  }
+
+
+
+  /* Button Styles */
+
+  a.edit-button, a.button {
+
+   display: inline-block;
+
+   margin-top: 10px;
+
+   padding: 10px 20px;
+
+   background-color: #003f5c;
+
+   color: white;
+
+   border-radius: 25px;
+
+   text-decoration: none;
+
+   font-size: 14px;
+
+   font-weight: bold;
+
+   transition: all 0.3s ease-in-out;
+
+  }
+
+
+
+  a.edit-button:hover, a.button:hover {
+
+   background-color: #007bff;
+
+   transform: translateY(-2px);
+
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+
+
+  /* Back to Dashboard Button */
+
+  .back-button {
+
+   display: block;
+
+   width: fit-content;
+
+   margin: 30px auto;
+
+   padding: 12px 30px;
+
+   background-color:  #003f5c;
+
+   color: white;
+
+   text-align: center;
+
+   border-radius: 25px;
+
+   text-decoration: none;
+
+   font-size: 16px;
+
+   font-weight: bold;
+
+   transition: all 0.3s ease-in-out;
+
+  }
+
+
+
+  .back-button:hover {
+
+   background-color: #08306b;
+
+   transform: translateY(-2px);
+
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+
+
+  /* Footer */
+
+  .footer {
+
+   background-color:  #003f5c;
+           
+
+   color: white;
+
+   text-align: center;
+
+   padding: 15px 10px;
+
+   font-size: 14px;
+
+  }
+
+
+
+  .footer a {
+
+   color: #ffcc00;
+
+   text-decoration: none;
+
+   font-weight: bold;
+
+  }
+
+
+
+  .footer a:hover {
+
+   text-decoration: underline;
+
+  }
+
+
+
+  /* Keyframe Animations */
+
+  @keyframes fadeIn {
+
+   from {
+
+    opacity: 0;
+
+    transform: scale(0.9);
+
+   }
+
+   to {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+   }
+
+  }

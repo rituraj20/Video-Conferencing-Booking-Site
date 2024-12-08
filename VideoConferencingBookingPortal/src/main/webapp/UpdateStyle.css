@@ -1,0 +1,194 @@
+@charset "ISO-8859-1";
+ /* Theme Colors */
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #f4f7fc;
+            --accent-color: #0073e6;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --light-text-color: #777777;
+            --box-shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* General Styling */
+         body {
+            background-size: cover; /* Cover the entire viewport */
+
+  background-position: center; /* Center the image */
+
+  background-repeat: no-repeat; /* Do not repeat the image */
+
+  background-attachment: fixed; /* Keep the image fixed when scrolling (optional) */
+
+  color: #333; /* Default text color */
+
+  margin: 0; /* Remove default body margin */
+
+  padding: 0;
+
+        }
+
+      header {
+    display: flex;
+    justify-content: center; /* This will center the h1 */
+    align-items: center;
+    padding: 5px;
+    background-color: #00796b;
+    color: white;
+    position: relative; /* To allow positioning of .welcome-info */
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome-info {
+    position: absolute; /* Position it on the left side */
+    left: 20px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center it */
+}
+
+.welcome-info h3, .welcome-info p {
+    margin: 0;
+    text-align: left;
+}
+      
+  .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #003f5c;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff7043;
+            color: white;
+            transform: scale(1.05);
+        }
+
+
+        /* Main Container */
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: var(--background-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px var(--box-shadow-color);
+            text-align: center;
+        }
+
+        /* Headings */
+        h2 {
+            font-size: 26px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        /* Form Elements */
+        select, input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color:  #003f5c;
+            color: var(--background-color);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #084298;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--light-text-color);
+        }
+
+        /* Booked Style */
+        .booked {
+            background-color: #d1d9e6;
+        }
+
+        /* Error Message */
+        .error {
+            color: red;
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+
+      background-color: #003f5c;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 15px 10px;
+
+      font-size: 14px;
+
+      margin-top: auto;
+
+    }
+
+    .footer a {
+
+      color: #ffcc00;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+    .footer a:hover {
+
+      text-decoration: underline;
+
+    }
